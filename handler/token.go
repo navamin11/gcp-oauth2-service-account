@@ -153,7 +153,7 @@ func NotUseLib(c *fiber.Ctx) error {
 					if err != nil {
 						log.Printf("[%s] %s - %s", "X", service.File, err)
 					} else {
-						jwt, err := utils.GenerateJWT(sa, scope, pk) // GetPrivateKey
+						jwt, err := utils.GenerateJWT(sa, scope, pk) // GenerateJWT
 						if err != nil {
 							log.Printf("[%s] %s - %s", "X", service.File, err)
 						} else {
