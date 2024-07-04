@@ -1,0 +1,13 @@
+services:  
+  myserver:
+      image: alpine:latest
+      build:
+        dockerfile: Dockerfile
+        context: .
+        target: Dev
+      tty: true
+      container_name: myserver
+      environment:
+        - TZ=Asia/Bangkok
+      ports:
+        - 3000:3000

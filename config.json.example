@@ -1,0 +1,13 @@
+{
+    "serviceAccount": [
+        {
+            "project":"",
+             "service": [
+                {
+                    "name": "<service name>",
+                    "file": "<service account key json file>"                 
+                }
+            ]
+        }
+    ]
+}
